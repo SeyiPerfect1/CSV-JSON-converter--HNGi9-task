@@ -6,12 +6,11 @@ class DeriveMetadata {
   constructor() {}
 
   deriveJSON(filepath) {
-
     //get the filename coming from the input
-    const filename = path.basename(filepath)
+    const filename = path.basename(filepath);
 
     //get the directory name coming from the input
-    const onlypath = path.dirname(filepath)
+    const onlypath = path.dirname(filepath);
 
     // read the file
     const data = new File().readFile(filepath);
@@ -70,11 +69,9 @@ class DeriveMetadata {
 
       //stringify the new result
       var jsonGenerated1 = JSON.stringify(result, null, 4);
-    
+
       //write the result into metadata.json
       new File().writeFile(onlypath, jsonGenerated1);
-
-
     }
   }
 }
