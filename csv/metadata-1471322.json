@@ -1,0 +1,28 @@
+{
+    "format": "CHIP-0007",
+    "name": "Timeyin",
+    "description": "The",
+    "minting_tool": "CSV_FILE.csv",
+    "sensitive_content": false,
+    "series_number": "Timeyin",
+    "series_total": "17",
+    "attributes": [
+        {
+            "trait_type": "gender",
+            "value": "Eccentic"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Tickets for Free Lunch",
+        "id": "timeyin-the -eccentic",
+        "attributes": [
+            {
+                "type": "description",
+                "value": "Rewards for accomplishments during HNGi9."
+            }
+        ]
+    },
+    "data": {
+        "Sha256 hash": "97657e6c7cf5b61f1f17a768728ab98a3c66306ae8a7f7e012eeb5a77b592484"
+    }
+}

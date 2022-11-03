@@ -1,0 +1,28 @@
+{
+    "format": "CHIP-0007",
+    "name": "Hilda",
+    "description": "The",
+    "minting_tool": "CSV_FILE.csv",
+    "sensitive_content": false,
+    "series_number": "Hilda",
+    "series_total": "17",
+    "attributes": [
+        {
+            "trait_type": "gender",
+            "value": "Insomaniac"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Tickets for Free Lunch",
+        "id": "hilda-the -insomaniac",
+        "attributes": [
+            {
+                "type": "description",
+                "value": "Rewards for accomplishments during HNGi9."
+            }
+        ]
+    },
+    "data": {
+        "Sha256 hash": "413d099fce34cd5a7d373a893948a0e37d28797f6875a22d6dd6473b7a66c57d"
+    }
+}

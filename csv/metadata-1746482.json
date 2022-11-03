@@ -1,0 +1,28 @@
+{
+    "format": "CHIP-0007",
+    "name": "Agbani",
+    "description": "The",
+    "minting_tool": "CSV_FILE.csv",
+    "sensitive_content": false,
+    "series_number": "Agbani",
+    "series_total": "17",
+    "attributes": [
+        {
+            "trait_type": "gender",
+            "value": "Wannabe"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Tickets for Free Lunch",
+        "id": "agbani-the-wannabe",
+        "attributes": [
+            {
+                "type": "description",
+                "value": "Rewards for accomplishments during HNGi9."
+            }
+        ]
+    },
+    "data": {
+        "Sha256 hash": "aca5db87f1f5f781a04b5e21c6a8abf2b830fc93bb0a78619caa8fb8fedb5e04"
+    }
+}

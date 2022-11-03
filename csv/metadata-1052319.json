@@ -1,0 +1,28 @@
+{
+    "format": "CHIP-0007",
+    "name": "Sisi Yemi",
+    "description": "The",
+    "minting_tool": "CSV_FILE.csv",
+    "sensitive_content": false,
+    "series_number": "Sisi Yemi",
+    "series_total": "17",
+    "attributes": [
+        {
+            "trait_type": "gender",
+            "value": "Street Aunty"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Tickets for Free Lunch",
+        "id": "sisi yemi-the -street aunty",
+        "attributes": [
+            {
+                "type": "description",
+                "value": "Rewards for accomplishments during HNGi9."
+            }
+        ]
+    },
+    "data": {
+        "Sha256 hash": "1e0ee23bda41b0aafd16921f59db19c9aa14ae9fbdd940c1aba23ad13693253f"
+    }
+}

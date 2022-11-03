@@ -1,0 +1,28 @@
+{
+    "format": "CHIP-0007",
+    "name": "Wendy",
+    "description": "The",
+    "minting_tool": "CSV_FILE.csv",
+    "sensitive_content": false,
+    "series_number": "Wendy",
+    "series_total": "17",
+    "attributes": [
+        {
+            "trait_type": "gender",
+            "value": "Banker"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Tickets for Free Lunch",
+        "id": "wendy-the -banker",
+        "attributes": [
+            {
+                "type": "description",
+                "value": "Rewards for accomplishments during HNGi9."
+            }
+        ]
+    },
+    "data": {
+        "Sha256 hash": "7e98835693011e903bae4328fdca0f3a823753d3de9f810519cc2afd80bec29c"
+    }
+}

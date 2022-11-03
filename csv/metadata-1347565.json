@@ -1,0 +1,28 @@
+{
+    "format": "CHIP-0007",
+    "name": "Chiamaka",
+    "description": "The",
+    "minting_tool": "CSV_FILE.csv",
+    "sensitive_content": false,
+    "series_number": "Chiamaka",
+    "series_total": "17",
+    "attributes": [
+        {
+            "trait_type": "gender",
+            "value": "Bully"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Tickets for Free Lunch",
+        "id": "chiamaka-the -bully",
+        "attributes": [
+            {
+                "type": "description",
+                "value": "Rewards for accomplishments during HNGi9."
+            }
+        ]
+    },
+    "data": {
+        "Sha256 hash": "678120d5d6495f8ae2047d3c139280ad3203fc2a1416f41edce875dfba645426"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "format": "CHIP-0007",
+    "name": "Stella",
+    "description": "The",
+    "minting_tool": "CSV_FILE.csv",
+    "sensitive_content": false,
+    "series_number": "Stella",
+    "series_total": "17",
+    "attributes": [
+        {
+            "trait_type": "gender",
+            "value": "Gossip"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Tickets for Free Lunch",
+        "id": "stella-the -gossip",
+        "attributes": [
+            {
+                "type": "description",
+                "value": "Rewards for accomplishments during HNGi9."
+            }
+        ]
+    },
+    "data": {
+        "Sha256 hash": "305a03fad94dbafe78554ad7e1b2e352e417932361231f9a51ed66aa17836b60"
+    }
+}

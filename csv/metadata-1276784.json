@@ -1,0 +1,28 @@
+{
+    "format": "CHIP-0007",
+    "name": "Asante",
+    "description": "The",
+    "minting_tool": "CSV_FILE.csv",
+    "sensitive_content": false,
+    "series_number": "Asante",
+    "series_total": "17",
+    "attributes": [
+        {
+            "trait_type": "gender",
+            "value": "Warrior"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Tickets for Free Lunch",
+        "id": "asante-the -warrior",
+        "attributes": [
+            {
+                "type": "description",
+                "value": "Rewards for accomplishments during HNGi9."
+            }
+        ]
+    },
+    "data": {
+        "Sha256 hash": "7f6a3e9c82e1852f992b36594e501dfcac446157002156c75685e79fe9268561"
+    }
+}

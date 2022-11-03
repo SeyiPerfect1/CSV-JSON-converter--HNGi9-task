@@ -1,20 +1,20 @@
 {
     "format": "CHIP-0007",
-    "name": "Tunde Yoruba Demon",
-    "description": "Tunde derives joy in breaking girls heart. It's a lifestyle.",
-    "minting_tool": "Team Bevel",
+    "name": "Monica",
+    "description": "The",
+    "minting_tool": "CSV_FILE.csv",
     "sensitive_content": false,
-    "series_number": 19,
-    "series_total": 526,
+    "series_number": "Monica",
+    "series_total": "17",
     "attributes": [
         {
             "trait_type": "gender",
-            "value": "male"
+            "value": "Smoker"
         }
     ],
     "collection": {
         "name": "Zuri NFT Tickets for Free Lunch",
-        "id": "b774f676-c1d5-422e-beed-00ef5510c64d",
+        "id": "monica-the -smoker",
         "attributes": [
             {
                 "type": "description",
@@ -23,6 +23,6 @@
         ]
     },
     "data": {
-        "Sha256": ""
+        "Sha256 hash": "081cfd73135fa21bcfbdf042ab9fef594620180520cbe30712047c7b20a3781f"
     }
 }

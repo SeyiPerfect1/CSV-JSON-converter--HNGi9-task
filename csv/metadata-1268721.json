@@ -1,0 +1,28 @@
+{
+    "format": "CHIP-0007",
+    "name": "Omawunmi",
+    "description": "The",
+    "minting_tool": "CSV_FILE.csv",
+    "sensitive_content": false,
+    "series_number": "Omawunmi",
+    "series_total": "17",
+    "attributes": [
+        {
+            "trait_type": "gender",
+            "value": "Businesswoman"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Tickets for Free Lunch",
+        "id": "omawunmi-the -businesswoman",
+        "attributes": [
+            {
+                "type": "description",
+                "value": "Rewards for accomplishments during HNGi9."
+            }
+        ]
+    },
+    "data": {
+        "Sha256 hash": "580f2c41aeca1daba83e1c9ed7187085dfafceb8b6629fbd3f3b47102dc606b2"
+    }
+}
