@@ -15,7 +15,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "./views"));
 
 app.get("/api/file", (req, res) => {
-  res.render("fileinput.ejs");
+  res.render("./views/fileinput.ejs");
 });
 
 app.post("/api/file", (req, res, next) => {
