@@ -22,8 +22,7 @@ class DeriveMetadata {
     let teamName;
 
     //iterate through the array generated from first entrie leaving out the header(start iterating from index 1)
-    for (let i = 1; i < dataArray.length-1; i++) {
-
+    for (let i = 1; i < dataArray.length - 1; i++) {
       let eachDetails = dataArray[i];
 
       //replace all , in the entries with "|" while leaving out , in entries that has , seperated values
@@ -31,15 +30,14 @@ class DeriveMetadata {
       const strReplace = eachDetails.replace(/,(?=\S)/g, "|");
       let fieldArray = strReplace.split("|");
 
-       //get index of headers
-       let seriesIndex = newHeader.indexOf("Series Number");
-       let nameIndex = newHeader.indexOf("Name");
-       let descriptionIndex = newHeader.indexOf("Description");
-       let genderIndex = newHeader.indexOf("Gender");
-       let attributesIndex = newHeader.indexOf("Attributes");
-       let UUIDIndex = newHeader.indexOf("UUID");
-       let seriesValue = fieldArray[seriesIndex].slice(0)
-       
+      //get index of headers
+      let seriesIndex = newHeader.indexOf("Series Number");
+      let nameIndex = newHeader.indexOf("Name");
+      let descriptionIndex = newHeader.indexOf("Description");
+      let genderIndex = newHeader.indexOf("Gender");
+      let attributesIndex = newHeader.indexOf("Attributes");
+      let UUIDIndex = newHeader.indexOf("UUID");
+      let seriesValue = fieldArray[seriesIndex].slice(0);
 
       let atrributeField;
       if (fieldArray.length === 8) {
@@ -56,7 +54,7 @@ class DeriveMetadata {
         genderIndex = newHeader.indexOf("Gender") - 1;
         attributesIndex = newHeader.indexOf("Attributes") - 1;
         UUIDIndex = newHeader.indexOf("UUID") - 1;
-        seriesValue = fieldArray[seriesIndex].slice(1)
+        seriesValue = fieldArray[seriesIndex].slice(1);
       }
 
       //the result was built into an object according to the details
@@ -139,5 +137,4 @@ class DeriveMetadata {
   }
 }
 const newData = new DeriveMetadata();
-newData.deriveJSON("csv/team_bevel.csv");
 module.exports = newData;

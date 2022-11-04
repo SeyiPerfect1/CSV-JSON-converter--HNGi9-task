@@ -1,8 +1,7 @@
 const express = require("express");
 require("dotenv").config();
 const newData = require("./csvconversion");
-const ejs = require("ejs");
-const { nextTick } = require("process");
+require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -12,10 +11,10 @@ app.use(express.urlencoded({ extended: false }));
 
 //set view engine
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "./views"));
+app.set("views", "views");
 
 app.get("/api/file", (req, res) => {
-  res.render("./views/fileinput.ejs");
+  res.render("fileinput.ejs");
 });
 
 app.post("/api/file", (req, res, next) => {
@@ -42,8 +41,6 @@ const errorHandler = () => (error, req, res, next) => {
   }
   next();
 };
-
-module.exports = errorHandler;
 
 app.listen(PORT, () => {
   console.log(`app listening at http://localhost:${PORT}`);
