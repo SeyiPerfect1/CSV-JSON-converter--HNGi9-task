@@ -11,11 +11,11 @@ class File {
     return data;
   }
 
-  writeFile(filepath, json) {
+  writeFile(filename, json) {
     //write file into metadata.json
-    let filePath = path.join(
-      filepath,
-      `metadata-${Math.floor(1000000 + Math.random() * 900000)}.json`
+    let filename = path.join(
+      filename,
+      `metadata-${Math.floor(1000 + Math.random() * 900000)}.json`
     );
     fs.writeFileSync(filePath, json);
   }
