@@ -2,7 +2,7 @@
     "format": "CHIP-007",
     "name": "aminu-the-carpenter",
     "description": "Aminu's hands are blessed, he makes the best furniture in the whole of Kano.",
-    "minting_tool": "Team Bevel",
+    "minting_tool": "Team Bevel)",
     "sensitive_content": false,
     "series_number": "4",
     "series_total": "6",
@@ -55,6 +55,6 @@
         ]
     },
     "data": {
-        "Sha256 hash": "9d04d15261ff1a870d7af7b53d6b7b15358b6269e1212631822a67007098ed64"
+        "Sha256 hash": "a2a039073232c5e90ed097e5c5725c8a18d1802bcc424edc6b69f127ec77000d"
     }
 }

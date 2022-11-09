@@ -2,7 +2,7 @@
     "format": "CHIP-007",
     "name": "chibuike-the-kudibag",
     "description": "Chibuike is too rich. Everyone wonders how he got it.",
-    "minting_tool": "Team Bevel",
+    "minting_tool": "Team Bevel)",
     "sensitive_content": false,
     "series_number": "5",
     "series_total": "6",
@@ -55,6 +55,6 @@
         ]
     },
     "data": {
-        "Sha256 hash": "6875a1ea67b8600feeca63e93a3753dd21862c2b5e703d6d54aaf91587298c73"
+        "Sha256 hash": "788401cb7ff3fb94f4cb73a01f3789569ebd2107ffbabbc0be7a2d0e1a0fd2b5"
     }
 }

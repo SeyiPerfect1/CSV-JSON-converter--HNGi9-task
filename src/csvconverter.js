@@ -18,7 +18,6 @@ class DeriveMetadata {
     const header = dataArray[0].split(",");
 
     //create new csv file and set header
-    console.log(dataArray[0])
     new File().writeFile(`new.${filename}`, header.join(","));
 
     //iterate through the array generated from first entrie leaving out the header(start iterating from index 1)

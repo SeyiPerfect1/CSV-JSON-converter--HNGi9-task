@@ -2,7 +2,7 @@
     "format": "CHIP-007",
     "name": "alli-the-queeny",
     "description": "Alli is an LGBT Stan.",
-    "minting_tool": "Team Bevel",
+    "minting_tool": "Team Bevel)",
     "sensitive_content": false,
     "series_number": "2",
     "series_total": "6",
@@ -55,6 +55,6 @@
         ]
     },
     "data": {
-        "Sha256 hash": "cabae2418bead81fb9587c2dbeda85a387c4a59767226cbec778f073b9e7ec9d"
+        "Sha256 hash": "8685c460c0ac2c259a8dd890186cffa86faed79c896c3c89c95ce3055cb50d00"
     }
 }

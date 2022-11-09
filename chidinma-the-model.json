@@ -2,7 +2,7 @@
     "format": "CHIP-007",
     "name": "chidinma-the-model",
     "description": "From Paris' runways, to London's streets, she's always in demand.",
-    "minting_tool": "Team Bevel",
+    "minting_tool": "Team Bevel)",
     "sensitive_content": false,
     "series_number": "6",
     "series_total": "6",
@@ -55,6 +55,6 @@
         ]
     },
     "data": {
-        "Sha256 hash": "a84b7b693cf48929272582f0b3d483c88b3fa051ce00e1f7eecbd1663ab3e366"
+        "Sha256 hash": "01566c046654e83deb89efdc9dd7cabbc20eee0ac0f633b451cefd13e3dc5f1f"
     }
 }

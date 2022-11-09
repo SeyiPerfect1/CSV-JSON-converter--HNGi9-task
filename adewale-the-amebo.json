@@ -2,7 +2,7 @@
     "format": "CHIP-007",
     "name": "adewale-the-amebo",
     "description": "Adewale always wants to be in everyone's business.",
-    "minting_tool": "Team Bevel",
+    "minting_tool": "Team Bevel)",
     "sensitive_content": false,
     "series_number": "1",
     "series_total": "6",
@@ -55,6 +55,6 @@
         ]
     },
     "data": {
-        "Sha256 hash": "1a5dc60916634b4540ca2d99453797be8dbf7270f42e90e1e229b2817753fba2"
+        "Sha256 hash": "4e90a1118bd1b429f73ebe4d0313870a4529a8b6bcc40e6f473188ac06ca156e"
     }
 }

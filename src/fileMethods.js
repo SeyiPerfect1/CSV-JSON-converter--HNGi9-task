@@ -11,9 +11,9 @@ class File {
     return data;
   }
 
-  writeFile(filename, json) {
+  writeFile(filename, data) {
     //write to a file synchronously
-    fs.writeFileSync(filename, json);
+    fs.writeFileSync(filename, data);
   }
 
   appendFile(filename, data){

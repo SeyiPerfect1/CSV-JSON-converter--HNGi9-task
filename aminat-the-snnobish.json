@@ -2,7 +2,7 @@
     "format": "CHIP-007",
     "name": "aminat-the-snnobish",
     "description": "Aminat never really wants to talk to anyone.",
-    "minting_tool": "Team Bevel",
+    "minting_tool": "Team Bevel)",
     "sensitive_content": false,
     "series_number": "3",
     "series_total": "6",
@@ -55,6 +55,6 @@
         ]
     },
     "data": {
-        "Sha256 hash": "dfad75205000ff918b52db4267e9401944174ae3f63a6da71d8f0b619d535b4d"
+        "Sha256 hash": "ee8869ee7cb37b96d0ca61b60adbd8df38f4def0c7119bf43f2c00026a365879"
     }
 }
