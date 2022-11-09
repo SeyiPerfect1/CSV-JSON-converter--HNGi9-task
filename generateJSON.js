@@ -1,16 +1,15 @@
-const DeriveMetadata = require("./src/csvconversion");
+const DeriveMetadata = require("./src/csvconverter");
 const readline = require("readline").createInterface({
     input: process.stdin,
     otput: process.stdout,
 });
 
-readline.setPrompt(`welcome, Enter the csv filename:`);
+console.log(`welcome, Enter the csv filename and your team name (eg Team_Bevel.csv:Team Bevel):`);
 readline.prompt()
 
-readline.on('line', (filename, teamName) => {
-    console.log(`Processing: ${filename}`);
-    new DeriveMetadata().deriveJSON(filename)
-    newData.deriveJSON(filename);
+readline.on('line', (filename) => {
+    console.log(`Processing: ${filename.split(":")[0]}`);
+    new DeriveMetadata().deriveJSON(filename);
     readline.close();
     console.log("done")
 });

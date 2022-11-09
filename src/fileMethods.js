@@ -12,12 +12,15 @@ class File {
   }
 
   writeFile(filename, json) {
-    //write file into metadata.json
-    let filename = path.join(
-      filename,
-      `metadata-${Math.floor(1000 + Math.random() * 900000)}.json`
-    );
-    fs.writeFileSync(filePath, json);
+    //write to a file synchronously
+    fs.writeFileSync(filename, json);
+  }
+
+  appendFile(filename, data){
+    //append to an already exissting file
+    fs.appendFile(filename, data, (err) => {
+      if (err) throw err;
+    })
   }
 }
 

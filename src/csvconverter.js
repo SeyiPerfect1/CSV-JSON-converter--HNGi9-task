@@ -6,22 +6,23 @@ class DeriveMetadata {
   constructor() {}
 
   deriveJSON(filename) {
-    //get the name of the 
-    const basename = path.parse(filename).name;
-
-    //get the directory name coming from the input
-    // const onlypath = path.dirname(filename);
+    //get the name of the
+    // const basename = path.parse(filename).name;
+    const csvFilename = filename.split(":");
 
     // read the file
-    const data = new File().readFile(filename);
+    const data = new File().readFile(csvFilename[0]);
 
     //split the datacoming from the file into dataArray
     const dataArray = data.toString().split("\r");
     const header = dataArray[0].split(",");
-    // let teamName;
+
+    //create new csv file and set header
+    console.log(dataArray[0])
+    new File().writeFile(`new.${filename}`, header.join(","));
 
     //iterate through the array generated from first entrie leaving out the header(start iterating from index 1)
-    for (let i = 1; i < dataArray.length - 1; i++) {
+    for (let i = 1; i < dataArray.length; i++) {
       let eachDetails = dataArray[i];
 
       //replace all , in the entries with "|" while leaving out , in entries that has , seperated values
@@ -34,26 +35,18 @@ class DeriveMetadata {
       let nameIndex = header.indexOf("Name");
       let descriptionIndex = header.indexOf("Description");
       let genderIndex = header.indexOf("Gender");
-      // let attributesIndex = header.indexOf("Attributes");
       let UUIDIndex = header.indexOf("UUID");
       let seriesValue = fieldArray[seriesIndex].slice(0);
 
-      let  atrributeField = fieldArray.slice(5, 6).toString().split(";");
-      //   seriesIndex = newHeader.indexOf("Series Number") - 1;
-      //   nameIndex = newHeader.indexOf("Name") - 1;
-      //   descriptionIndex = newHeader.indexOf("Description") - 1;
-      //   genderIndex = newHeader.indexOf("Gender") - 1;
-      //   attributesIndex = newHeader.indexOf("Attributes") - 1;
-      //   UUIDIndex = newHeader.indexOf("UUID") - 1;
-        seriesValue = fieldArray[seriesIndex].slice(1);
-      // // }
+      let atrributeField = fieldArray.slice(5, 6).toString().split(";");
+      seriesValue = fieldArray[seriesIndex].slice(1);
 
       //the result was built into an object according to the details
       let result = {
         format: "CHIP-007",
         name: `${fieldArray[nameIndex]}`,
         description: `${fieldArray[descriptionIndex]}`,
-        minting_tool: `${basename}`,
+        minting_tool: `${csvFilename[1].trim()}`,
         sensitive_content: false,
         series_number: `${seriesValue}`,
         series_total: `${dataArray.length - 1}`,
@@ -111,21 +104,24 @@ class DeriveMetadata {
       };
 
       //output stringify
-      var jsonGenerated = JSON.stringify(result, null, 4);
+      let jsonGenerated = JSON.stringify(result, null, 4);
 
       //implement hash function to generate the hash value of the json data
-      var hash = hashFunction(jsonGenerated);
+      let hash = hashFunction(jsonGenerated);
 
       //save the hash function in the hash field of the json data
       result.data["Sha256 hash"] = hash;
 
-      //stringify the new result
-      var jsonGenerated1 = JSON.stringify(result, null, 4);
+      //save hash to csv
+      new File().appendFile(`new.${filename}`,dataArray[i]+=`${hash}\n`)
 
-      // write the result into metadata.json
-      new File().writeFile(__dirname, jsonGenerated1);
+      //stringify the new result
+      let jsonGenerated1 = JSON.stringify(result, null, 4);
+
+      // write the result into file
+      new File().writeFile(`${fieldArray[nameIndex]}.json`, jsonGenerated1);
     }
   }
 }
-// const newData = new DeriveMetadata();
+
 module.exports = DeriveMetadata;

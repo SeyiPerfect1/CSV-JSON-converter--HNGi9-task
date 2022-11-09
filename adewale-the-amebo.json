@@ -1,0 +1,60 @@
+{
+    "format": "CHIP-007",
+    "name": "adewale-the-amebo",
+    "description": "Adewale always wants to be in everyone's business.",
+    "minting_tool": "Team Bevel",
+    "sensitive_content": false,
+    "series_number": "1",
+    "series_total": "6",
+    "attributes": [
+        {
+            "trait_type": "gender",
+            "value": "male"
+        },
+        {
+            "trait_type": "hair",
+            "value": "bald"
+        },
+        {
+            "trait_type": " eyes",
+            "value": "black"
+        },
+        {
+            "trait_type": " teeth",
+            "value": "none"
+        },
+        {
+            "trait_type": " clothing",
+            "value": "red"
+        },
+        {
+            "trait_type": " accessories",
+            "value": "mask"
+        },
+        {
+            "trait_type": " expression",
+            "value": "none"
+        },
+        {
+            "trait_type": " strength",
+            "value": "powerful"
+        },
+        {
+            "trait_type": " weakness",
+            "value": "curiosity"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Tickets for Free Lunch",
+        "id": "cad316c3-37f8-4b27-9f53-9d803bfcfee7",
+        "attributes": [
+            {
+                "type": "description",
+                "value": "Rewards for accomplishments during HNGi9."
+            }
+        ]
+    },
+    "data": {
+        "Sha256 hash": "1a5dc60916634b4540ca2d99453797be8dbf7270f42e90e1e229b2817753fba2"
+    }
+}
